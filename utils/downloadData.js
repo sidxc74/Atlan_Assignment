@@ -1,5 +1,3 @@
-// downloadUtils.js
-
 
 export const downloadAsTable = (data, filename) => {
     const tableContent = convertToTable(data);
@@ -59,8 +57,6 @@ export const downloadAsTable = (data, filename) => {
   };
   
   const convertToCsv = (data) => {
-    // Implement your CSV conversion logic here
-    // This is a simple example, you might need to adjust based on your data structure
     const headers = Object.keys(data[0]).join(',');
     const rows = data.map((row) => Object.values(row).join(','));
     return `${headers}\n${rows.join('\n')}`;
