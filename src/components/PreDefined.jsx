@@ -3,6 +3,10 @@ import React from 'react';
 function PreDefined() {
   const dummyQueries = [
     {
+      query : "Default (Anything other than empty)",
+      result : "Retrieve results from employees.csv file"
+    },
+    {
       query: "SELECT * FROM categories WHERE category = 'Electronics'",
       result: "Retrieve results from categories.csv file",
     },
@@ -26,6 +30,7 @@ function PreDefined() {
       query: "SELECT * FROM products WHERE products_name > 25 AND products_price < 1000",
       result: "Retrieve results from products.csv file",
     },
+    
   ];
 
   return (
@@ -38,7 +43,7 @@ function PreDefined() {
             <div>{dummyquery.result}</div>
           </div>
         ))}
-        <div className='text-red-600 text-2xl dark:text-purple-800 '>   Different color Text Indicated Query that retrieve  over 10,000 rows</div>
+        <div className='text-red-600 text-2xl dark:text-purple-800 '>   Different color Text Indicates Query that retrieve  over 10,000 rows</div>
         <div className='text-red-600 text-2xl dark:text-purple-800'> And as Browser was getting lagged while Retrieving such large rows together</div>
         <div className='text-red-600 text-2xl dark:text-purple-800'> So i used concept of Pagination to optimize it </div>
         <div className='text-red-600 text-2xl dark:text-purple-800'> Maybe Now i can get some Brownie 🍪 points as mentioned in Assginment 🤪</div>
