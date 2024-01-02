@@ -35,7 +35,12 @@ function PreDefined() {
 
   return (
     <>
+     <div className='ml-52'>
+      <div className='text-pink-600 font-semibold'>Created By Sidak Chuchra</div>
+      <div className='text-pink-600 font-semibold'>sidxc72@gmail.com</div>
+      </div>
       <div className='font-bold text-center text-4xl text-lime-800 dark:text-orange-600'>Dummy Queries with Tables associated with them</div>
+
       <div className='mx-auto p-10 w-4/5 translate-y-20 border-black border-2 min-h-80 flex flex-col gap-6 justify-center items-center bg-lime-800  dark:bg-orange-600'>
         {dummyQueries.map((dummyquery, index) => (
           <div key={index} className={`flex justify-between px-10 items-center w-full gap-[28rem] ${index === 6 ? 'font-semibold text-xl text-red-600 dark:text-purple-800' : 'text-white'} `}>

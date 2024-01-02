@@ -111,11 +111,16 @@ function Home() {
   };
 
   return (
+    <div>
+    <div className='ml-52'>
+      <div className='text-pink-600 font-semibold'>Created By Sidak Chuchra</div>
+      <div className='text-pink-600 font-semibold'>sidxc72@gmail.com</div>
+      </div>
     <div className="flex flex-col items-center gap-6">
       <div className="w-80 h-16 mt-20 text-center text-black text-3xl font-bold font-['Montserrat'] leading-10 dark:text-white">
         RUN YOUR QUERY
       </div>
-      <div className='font-semibold text-pink-700 mb-4'>Start Typing or Click on 🔽 to select a query from the dropdown</div>
+      <div className='font-semibold text-pink-700 mb-2'>Start Typing or Click on 🔽 to select a query from the dropdown</div>
       <div className='font-semibold text-red-600 mb-4'>Note: If you run anything outside of the query list, it will show default data</div>
       <div className="flex justify-center items-center gap-6">
         <input
@@ -241,7 +246,9 @@ function Home() {
         <div className="text-red-600 font-semibold">Run a Query to get Data!!....</div>
       )}
     </div>
+    </div>
   );
+
 }
 
 export default Home;
